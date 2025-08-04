@@ -6,6 +6,7 @@ import starlight from "@astrojs/starlight";
 export default defineConfig({
   site: "https://www.docs-test.hostari-labs.com",
   server: {
+    allowedHosts: true,
     host: true,
   },
   integrations: [
