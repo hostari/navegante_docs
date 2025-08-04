@@ -28,8 +28,41 @@ export default defineConfig({
           ],
         },
         {
+          label: "User Guides",
+          autogenerate: { directory: "user-guides" },
+        },
+        {
+          label: "Architecture",
+          autogenerate: { directory: "architecture" },
+        },
+        {
           label: "Reference",
-          autogenerate: { directory: "reference" },
+          items: [
+            {
+              label: "Infrastructure Projects Reference",
+              slug: "reference/infrastructure-projects",
+            },
+            {
+              label: "Application Configurations Reference",
+              slug: "reference/application-configurations",
+            },
+            {
+              label: "Application Services Reference",
+              slug: "reference/application-services",
+            },
+            {
+              label: "Application Deployments Reference",
+              slug: "reference/application-deployments",
+            },
+            {
+              label: "Organizations Reference",
+              slug: "reference/organizations",
+            },
+            {
+              label: "Role-Based Access Control (RBAC) Reference",
+              slug: "reference/organizations",
+            },
+          ],
         },
       ],
     }),
