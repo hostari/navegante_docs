@@ -5,6 +5,9 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	server: {host: true},
+	devOptions: {
+	  hostname: '0.0.0.0'
+	},
 	integrations: [
 		starlight({
 			title: 'My Docs',
