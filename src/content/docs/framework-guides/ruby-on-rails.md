@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Ruby on Rails
 description: Learn how to get started with Navegante.
 ---
 

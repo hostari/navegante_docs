@@ -21,15 +21,19 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Get Started",
+          label: "Start Here",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "Start Here", slug: "get-started" },
+            { label: "Getting Started", slug: "get-started" },
           ],
         },
         {
           label: "User Guides",
           autogenerate: { directory: "user-guides" },
+        },
+        {
+          label: "Framework Guides",
+          autogenerate: { directory: "framework-guides" },
         },
         {
           label: "Architecture",

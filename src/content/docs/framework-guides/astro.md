@@ -1,5 +1,5 @@
 ---
-title: Getting Started
+title: Astro
 description: Learn how to get started with Navegante.
 ---
 
