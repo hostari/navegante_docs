@@ -1,5 +1,5 @@
 ---
-title: How to Deploy on Navegante within 10 minutes
+title: Welcome to Navegante!
 description: Learn how to get started with Navegante.
 ---
 

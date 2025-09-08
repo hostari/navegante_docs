@@ -1,6 +1,6 @@
 ---
-title: Getting Started
-description: Learn how to get started with Navegante.
+title: FastAPI on Navegante
+description: Learn how to deploy your FastAPI app.
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.

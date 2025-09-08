@@ -1,5 +1,5 @@
 ---
-title: Astro
+title: Astro on Navegante
 description: Learn how to get started with Navegante.
 ---
 

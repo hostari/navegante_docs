@@ -23,13 +23,19 @@ export default defineConfig({
         {
           label: "Start Here",
           items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Getting Started", slug: "get-started" },
+            {
+              label: "Welcome to Navegante",
+              slug: "welcome",
+            },
+            {
+              label: "Quick Start",
+              slug: "quick-start",
+            },
           ],
         },
         {
-          label: "User Guides",
-          autogenerate: { directory: "user-guides" },
+          label: "Features",
+          autogenerate: { directory: "features" },
         },
         {
           label: "Framework Guides",

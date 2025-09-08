@@ -1,6 +1,6 @@
 ---
-title: Ruby on Rails
-description: Learn how to deploy your Rails app.
+title: Quick Start
+description: Get started with Navegante and deploy your app in 10 minutes.
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.

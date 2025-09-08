@@ -1,12 +1,12 @@
 ---
 title: Navegante Documentation
-description: Learn the ins-and-outs of Navegante, the most pleasant PaaS out there.
+description: Developer documentation for deploying and managing applications on Navegante.
 template: splash
 hero:
-  tagline: Learn the ins-and-outs of Navegante, the most pleasant PaaS out there.
+  tagline: Deploy, manage, and scale your web apps with Navegante.
   actions:
     - text: Get Started
-      link: /get-started/
+      link: /quick-start
       icon: right-arrow
 ---
 import { CardGrid } from '@astrojs/starlight/components';
@@ -15,9 +15,24 @@ import { LinkCard } from '@astrojs/starlight/components';
 ## Quick Links
 <CardGrid>
   <LinkCard
-    title="Deploy your app within 10 minutes"
-    href="/user-guides/how-to-deploy-in-10-mins"
+    title="Quick Start"
+    href="/quick-start"
     description="Learn how to easily deploy your app on Navegante within 10 minutes."
+  />
+  <LinkCard
+    title="Ruby on Rails on Navegante"
+    href="/framework-guides/ruby-on-rails"
+    description="Everything you need to know about deploying your Ruby on Rails app on Navegante."
+  />
+  <LinkCard
+    title="Astro on Navegante"
+    href="/framework-guides/astro"
+    description="Everything you need to know about deploying your Astro app on Navegante."
+  />
+  <LinkCard
+    title="FastAPI on Navegante"
+    href="/framework-guides/fastapi"
+    description="Everything you need to know about deploying your FastAPI app on Navegante."
   />
 </CardGrid>
 
