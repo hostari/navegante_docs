@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # devenv
 mise.toml*
+
+# direnv
+.direnv/
