@@ -1,6 +1,6 @@
 ---
-title: Welcome to Navegante!
-description: Learn how to get started with Navegante.
+title: Github Integration
+description: Learn how we securely pull your repos from Github though the Navegante Github App.
 ---
 
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
