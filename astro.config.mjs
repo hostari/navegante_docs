@@ -75,23 +75,27 @@ export default defineConfig({
                     label: "Reference",
                     items: [
                         {
-                            label: "Infrastructure Projects Reference",
+                            label: "Compute Plans",
+                            slug: "reference/compute-plans",
+                        },
+                        {
+                            label: "Infrastructure Projects",
                             slug: "reference/infrastructure-projects",
                         },
                         {
-                            label: "Application Configurations Reference",
+                            label: "Application Configurations ",
                             slug: "reference/application-configurations",
                         },
                         {
-                            label: "Application Services Reference",
+                            label: "Application Services",
                             slug: "reference/application-services",
                         },
                         {
-                            label: "Application Deployments Reference",
+                            label: "Application Deployments",
                             slug: "reference/application-deployments",
                         },
                         {
-                            label: "Organizations Reference",
+                            label: "Organizations",
                             slug: "reference/organizations",
                         },
                         {

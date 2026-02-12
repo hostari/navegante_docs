@@ -4,72 +4,115 @@ description: Get started with Navegante and deploy your app within 15 minutes.
 ---
 
 import { Aside } from "@astrojs/starlight/components";
+import { CardGrid } from "@astrojs/starlight/components";
+import { LinkCard } from "@astrojs/starlight/components";
+import { Icon } from "@astrojs/starlight/components";
+import { Steps } from "@astrojs/starlight/components";
 
 Go from `localhost` to `production` in as little as 15 minutes by following our quick start guide below.
 
 [ Add Image or Screen Recording here ]
 
-### 1. Prerequisites
+## Deploying your first project on Navegante
 
-Before you create your Navegante account, you need to have:
+<Steps>
 
-1. An active Github Account\*
-2. Public or private repositories with the code that you want to deploy
-3. Optional: A Docker Compose\*\* file
+1.  ### Prerequisites
 
-_\*We only support Github for now._
+    Before you create your Navegante account, you need to have:
 
-_\*\*We also support projects with `docker-compose.yml` files. Click [ here ] to learn more._
+        1. An active Github Account\*
+        2. Public or private repositories with the code that you want to deploy
+        3. Optional: A Docker Compose\*\* file
 
-### 2. Create your free Navegante Account
+    _\*We only support Github for now._
 
-<Aside type="tip">
-  All Navegante accounts are entitled to 1 free Infrastructure Project (Hobby
-  Plan). Learn more about our free-forever Hobby plan [ here ].
-</Aside>
+    _\*\*We also support projects with `docker-compose.yml` files. Click [here](features/deploy-with-docker-compose) to learn more._
 
-Creating a Navegante account is free and easy to do. Click [here](https://navegante.app/account_registrations/onboarding?utm_source=nvg_docsite) to create your account.
+2.  ### Create your free Navegante Account
 
-All Navegante accounts are entitled to 1 free Infrastructure Project (Hobby Plan). Learn more about our free-forever Hobby plan [ here ].
+    <Aside type="tip">
+      All Navegante accounts are entitled to 1 free Infrastructure Project
+      (Hobby Plan). Read about our [Compute Plans](reference/compute-plans) to
+      learn more.
+    </Aside>
 
-### 3. Install the Navegante Github App
+    Creating a Navegante account is quick, easy, and doesn't require adding a valid payment method. All you need is an active email address\*.
 
-Navegante relies on Github to securely pull, build, and deploy your software to the Internet.
+    Click [here](https://navegante.app/account_registrations/onboarding?utm_source=nvg_docsite) to create your account.
 
-After creating your account, you will be prompted to install the Github App and provide **read-only access** to your desired personal or organization repos.
+3.  ### Install the Navegante Cloud Github App
 
-Read the [Github Integration](architecture/github-integration) page to learn more about how we securely handle your Github repos.
+    Navegante relies on Github to securely pull, build, and deploy your software to the Internet.
 
-### 4. Create your first Infrastructure Project
+    After creating your account, you will be prompted to install the Navegante Cloud Github App and provide **read-only access** to your desired personal or organization repos.
 
-Infrastructure projects are collections made up of Github repos that you want to deploy.
+    ![A screenshot of the Navegante Github App install screen](../../assets/github-app-install-screen.png)
 
-To create an Infrastructure Project:
+    Read the [Github Integration](architecture/github-integration) page to learn more about how we securely handle your Github repos.
 
-1. Click on the "Create a New Infrastructure Project" button.
-2. Write the desired name of your Infrastructure Project (or leave it blank for an auto-generated name).
-3. Select the desired Compute Plan for your Infrastructure Project.
-4. Select the repos you want to add to your Infrastructure Project.
-5. Create and view your project in the dashboard.
+4.  ### Create your first Infrastructure Project
 
-Infrastructure Projects are billed according to the Compute Plan you selected during the project creation process. If you wish to update your Compute Plan, reach out to us at `support@navegante.app`.
+    [Infrastructure Projects](reference/infrastructure-projects-reference) are collections made up of Github repos that you want to deploy.
 
-Click [ here ] to learn more about Infrastructure Projects.
+    ![A screenshot of the Infrastructure Projects screen](../../assets/infrastructure-project.png)
 
-### 5. Configure your Infrastructure Project
+    To create an Infrastructure Project:
 
-Insert section for configuration here
+        1. Click on the "Create a New Infrastructure Project" button.
+        2. Write the desired name of your Infrastructure Project (or leave it blank for an auto-generated name).
+        3. Select the desired [Compute Plan](reference/compute-plans) for your Infrastructure Project.
+        4. Select the repos you want to add to your Infrastructure Project.
+        5. Create and view your project in the dashboard.
 
-### 6. Deploy!
+    After successfully creating your Infrastructure Project, you should now be able to configure your through Navegante.
 
-If you followed the instructions...
+5.  ### Configure your App
+
+    [App Configurations](reference/app-configurations-reference) are the individual repos that you added to your Infrastructure Project.
+
+    ![A screenshot of some of the configuration options available in Navegante](../../assets/app-configuration.png)
+
+    To configure your App:
+
+        1. Click on the "Configure" button to access your [App Configuration](reference/application-configurations)'s dedicated control plane.
+        2. All Navegante apps come with a free `*.navegante.app` subdomain. You can add your own custom domain name through the [Domains]() page.
+        2. If your app requires environment variables, you may add them in the "Environment Variables" section at the bottom of the page.
+        3. If your app requires additional services (such as databases, caches, CDNs, etc), you may choose to:
+            - Add their connection strings in "Environment Variables" (if they are hosted by another provider)
+            - or deploy an instance of your services through Navegante's [Managed Services](reference/application-services) found above the "Environment Variables" section.
+        4. If your app requires specific build arguments as part of its deployment configuration, you may add those under the [Build Arguments]() section at the bottom of the page.
+
+    After adding any necessary environment variables and services, you should be good to go and ready to deploy!
+
+6.  ### Deploy your App
+
+    If you encounter no deployment errors,
+
+</Steps>
 
 ## Check out our deployment guides!
 
-Now that your Navegante account is ready for deployments, you might want to read up on some of our deployment guides.
+Now that your Navegante account is ready for deployments, you might want to read up on some of our deployment guides:
 
-[ insert list of deployment guides ]
+<CardGrid>
+  <LinkCard
+    title="Deploy Ruby on Rails on Navegante"
+    href="/framework-guides/ruby-on-rails"
+    description="Everything you need to know about deploying your Ruby on Rails app on Navegante."
+  />
+  <LinkCard
+    title="Deploy Astro on Navegante"
+    href="/framework-guides/astro"
+    description="Everything you need to know about deploying your Astro app on Navegante."
+  />
+  <LinkCard
+    title="Deploy Phoenix on Navegante"
+    href="/framework-guides/fastapi"
+    description="Everything you need to know about deploying your Phoenix app on Navegante."
+  />
+</CardGrid>
 
-Certain frameworks need some manual configuration on Navegante to be deployed.
+While we support most web frameworks, there may be instances where some frameworks need additional configuration on the Navegante web app.
 
 For JS-based frameworks and static site generators, we recommend going through the [ insert link for Javascript FAQs ] before deploying on Navegante to ensure a smooth experience.
