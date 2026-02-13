@@ -39,6 +39,8 @@ Go from `localhost` to `production` in as little as 15 minutes by following our 
 
     Creating a Navegante account is quick, easy, and doesn't require adding a valid payment method. All you need is an active email address\*.
 
+    ![A screenshot of Sign Up screen](../../assets/sign-up.png)
+
     Click [here](https://navegante.app/account_registrations/onboarding?utm_source=nvg_docsite) to create your account.
 
 3.  ### Install the Navegante Cloud Github App
@@ -49,7 +51,7 @@ Go from `localhost` to `production` in as little as 15 minutes by following our 
 
     ![A screenshot of the Navegante Github App install screen](../../assets/github-app-install-screen.png)
 
-    Read the [Github Integration](architecture/github-integration) page to learn more about how we securely handle your Github repos.
+    Read the [Github Integration](github-app/github-integration) page to learn more about how we securely handle your Github repos.
 
 4.  ### Create your first Infrastructure Project
 
@@ -69,14 +71,14 @@ Go from `localhost` to `production` in as little as 15 minutes by following our 
 
 5.  ### Configure your App
 
-    [App Configurations](reference/app-configurations-reference) are the individual repos that you added to your Infrastructure Project.
+    [App Configurations](reference/app-configurations) are the individual Github repos that you added to your Infrastructure Project.
 
     ![A screenshot of some of the configuration options available in Navegante](../../assets/app-configuration.png)
 
     To configure your App:
 
         1. Click on the "Configure" button to access your [App Configuration](reference/application-configurations)'s dedicated control plane.
-        2. All Navegante apps come with a free `*.navegante.app` subdomain. You can add your own custom domain name through the [Domains]() page.
+        2. All Navegante apps come with a free `*.navegante.app` subdomain. You can add your own custom domain name through the [Domains](features/domains) page.
         2. If your app requires environment variables, you may add them in the "Environment Variables" section at the bottom of the page.
         3. If your app requires additional services (such as databases, caches, CDNs, etc), you may choose to:
             - Add their connection strings in "Environment Variables" (if they are hosted by another provider)
@@ -87,13 +89,28 @@ Go from `localhost` to `production` in as little as 15 minutes by following our 
 
 6.  ### Deploy your App
 
-    If you encounter no deployment errors,
+    [App Deployments](reference/application-deployments) are where you deploy and rollback
+    your [App Configurations](reference/application-configurations).
+
+    ![A screenshot of deployments screen](../../assets/deployments.png)
+    ![A screenshot of deployment modal for Docker Compose projects](../../assets/compose-deployment.png)
+
+    To deploy your App:
+
+        1. Inside your App Configuration's dedicated control plane, click on the "Deploy App" button under the Quick Actions section found at the top-half of the page.
+        2. Inside the Deployments screen of your App Configuration, select the "Deploy" option.
+        3. After clicking "Deploy", a modal will appear where you can select the specific branch and commit you want to deploy. On the right-hand side of the modal, you can also tweak certain deployment settings if you need them. By default, you will not have to change anything here aside from the branch and commit.
+        4. Once you are done with setting the parameters for your deployment, click on "Deploy" to initiate the deployment process for your project.
+
+    After triggering the deployment process for your project, you will be redirected to the Deployment Details page which shows the logs from your deployment. If it's successful, you should be able to see your app in production by clicking the "Visit Fallback Website" button. Subsequent commits to your repo will trigger an auto-deploy using the deployment settings you defined earlier.
+
+    Enjoy!
 
 </Steps>
 
 ## Check out our deployment guides!
 
-Now that your Navegante account is ready for deployments, you might want to read up on some of our deployment guides:
+Now that you've deployed your first project on Navegante, you might want to read up on some of our deployment guides\* to reduce potential headaches while deploying on Navegante.
 
 <CardGrid>
   <LinkCard
@@ -106,13 +123,11 @@ Now that your Navegante account is ready for deployments, you might want to read
     href="/framework-guides/astro"
     description="Everything you need to know about deploying your Astro app on Navegante."
   />
-  <LinkCard
-    title="Deploy Phoenix on Navegante"
-    href="/framework-guides/fastapi"
-    description="Everything you need to know about deploying your Phoenix app on Navegante."
-  />
 </CardGrid>
 
-While we support most web frameworks, there may be instances where some frameworks need additional configuration on the Navegante web app.
+_\*Our deployment guides are based on actual production-grade deployments tested internally by the Navegante team._
 
-For JS-based frameworks and static site generators, we recommend going through the [ insert link for Javascript FAQs ] before deploying on Navegante to ensure a smooth experience.
+## Footnotes
+
+- While we support most web frameworks, there may be instances where some frameworks need additional configuration on the Navegante web app.
+- For JS-based frameworks and static site generators, we recommend going through the [JS Deployment Quirks](deployment-quirks/javascript-based-frameworks) and [Static Site Generators Quirks](deployment-quirks/static-site-generators-quirks) section before deploying on Navegante to ensure a smooth experience.

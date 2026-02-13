@@ -54,10 +54,10 @@ export default defineConfig({
                         },
                     ],
                 },
-                {
-                    label: "Architecture",
-                    autogenerate: { directory: "architecture" },
-                },
+                // {
+                //     label: "Architecture",
+                //     autogenerate: { directory: "architecture" },
+                // },
                 {
                     label: "Github App",
                     items: [
