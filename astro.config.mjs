@@ -100,7 +100,7 @@ export default defineConfig({
                         },
                         {
                             label: "Role-Based Access Control (RBAC) Reference",
-                            slug: "reference/organizations",
+                            slug: "reference/rbac",
                         },
                     ],
                 },
