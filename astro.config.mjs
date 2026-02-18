@@ -37,23 +37,23 @@ export default defineConfig({
                     label: "Features",
                     autogenerate: { directory: "features" },
                 },
-                {
-                    label: "Framework Guides",
-                    autogenerate: { directory: "framework-guides" },
-                },
-                {
-                    label: "Deployment Quirks",
-                    items: [
-                        {
-                            label: "Static Site Generators",
-                            slug: "",
-                        },
-                        {
-                            label: "Javascript-based Frameworks",
-                            slug: "",
-                        },
-                    ],
-                },
+                // {
+                //     label: "Framework Guides",
+                //     autogenerate: { directory: "framework-guides" },
+                // },
+                // {
+                //     label: "Deployment Quirks",
+                //     items: [
+                //         {
+                //             label: "Static Site Generators",
+                //             slug: "",
+                //         },
+                //         {
+                //             label: "Javascript-based Frameworks",
+                //             slug: "",
+                //         },
+                //     ],
+                // },
                 // {
                 //     label: "Architecture",
                 //     autogenerate: { directory: "architecture" },
