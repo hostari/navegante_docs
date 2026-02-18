@@ -59,15 +59,11 @@ export default defineConfig({
                 //     autogenerate: { directory: "architecture" },
                 // },
                 {
-                    label: "Github App",
+                    label: "Github Integration",
                     items: [
                         {
-                            label: "Github Integration",
-                            slug: "",
-                        },
-                        {
-                            label: "Troubleshooting",
-                            slug: "",
+                            label: "Github App (Navegante Cloud)",
+                            slug: "github-integration/github-app",
                         },
                     ],
                 },

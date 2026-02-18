@@ -1,5 +1,5 @@
 ---
-title: Github Integration
+title: Github App (Navegante Cloud)
 description: Learn how we securely pull your repos from Github through the Navegante Github App.
 ---
 
@@ -27,10 +27,10 @@ The app only requests read-only permissions necessary to pull your code for depl
 
 The Navegante Github App requests the following permissions:
 
-| Permission | Access Level | Purpose |
-|------------|--------------|---------|
-| **Repository contents** | Read-only | Pull your code to build and deploy |
-| **Metadata** | Read-only | Access basic repository information |
+| Permission              | Access Level | Purpose                             |
+| ----------------------- | ------------ | ----------------------------------- |
+| **Repository contents** | Read-only    | Pull your code to build and deploy  |
+| **Metadata**            | Read-only    | Access basic repository information |
 
 Navegante does not request write access to your repositories.
 
